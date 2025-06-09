@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>📄 Ask Mirage - PDF Chatbot</h1>
+
+        <div class="upload-section">
+            <input type="file" id="pdfUpload">
+            <button onclick="uploadFile()">Upload</button>
+            <p id="uploadStatus"></p>
+        </div>
+
+        <div class="train-section">
+            <button onclick="trainModel()">Train Model</button>
+            <p id="trainStatus"></p>
+        </div>
+
+        <div class="chat-section">
+            <input type="text" id="queryInput" placeholder="Ask a question...">
+            <button onclick="askQuestion()">Get Answer</button>
+            <p id="responseText"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

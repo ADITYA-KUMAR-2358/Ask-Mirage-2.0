@@ -1,0 +1,7 @@
+Flask
+faiss-cpu
+numpy
+pypdf
+sentence-transformers
+llama-cpp-python
+langchain
